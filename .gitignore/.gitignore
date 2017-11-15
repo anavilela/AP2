@@ -1,0 +1,67 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void leMatriz(int l, int c, int **mat)
+{
+    for (int i = 0; i < l; i++)
+    {
+        for (int j = 0; j < c; j++)
+        {
+            printf("\nDigite a posicao [%d][%d] da matriz: ", i+1, j+1);
+            scanf("%d", &mat[i][j]);
+        }
+    }
+}
+
+
+void diagonal(int l, int c, int *vet, int **matriz)
+{ int i, j;
+    for (i=0;i<l;i++)
+        for (j=0;j<c;j++)
+    {
+        if (i==j)
+        {
+            vet[i]=matriz[i][j];
+        }
+    }
+
+}
+
+void EscreveDigonal(int c, int *v)
+{
+    for (int j = 0; j < c; j++)
+     {
+         printf("\n Posicao [%d] da diagonal: %d ",  j+1, v[j]);
+     }
+}
+
+void EscreveMatriz(int l, int c, int *d,int **mat)
+{
+    for (int i = 0; i < l; i++)
+    {   printf("\n");
+        for (int j = 0; j < c; j++)
+        {
+            printf("%d \t",d[i]*mat[i][j]);
+
+        }
+    }
+}
+
+
+int main()
+{
+    int *d,**m,i,l=3, c=3;
+    d = (int *)malloc(sizeof(int)*c);
+    m = (int **) malloc(sizeof(int)*l);
+
+    for (i=0;i<l;i++)
+    {
+        m[i] = (int *)malloc(sizeof(int)*c);
+    }
+    leMatriz(l, c, m);
+    diagonal(l,c,d,m);
+    EscreveDigonal(c,d);
+    EscreveMatriz(l, c, d, m);
+
+    return 0;
+}
