@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1516547743 source:/home/ana/Documentos/Backup Mãe/Área de Trabalho/registros/main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+
