@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-//void ConvertToBinary(int n);
+
 int main() {
     ConvertToBinary(5);
     return 0;
