@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1535928474 source:/home/ana/Documentos/Backup Mãe/Área de Trabalho/passagem de parametros/main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"calculadora.h"
+
+1535928537 /home/ana/Documentos/Backup Mãe/Área de Trabalho/passagem de parametros/calculadora.h
+
